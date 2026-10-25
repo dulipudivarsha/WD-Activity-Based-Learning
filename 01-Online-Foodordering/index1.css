@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+}
+
+/* ---------- Menu bar ---------- */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color:rgb(231, 162, 94);
+  padding: 15px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.logo {
+  color: white;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 18px;
+}
+
+nav a:hover {
+  color:sandybrown;
+}
+
+/* ---------- Sections ---------- */
+section {
+  padding: 90px 6% 40px;
+}
+
+section h2 {
+  color: #d62828;
+  margin-bottom: 15px;
+}
+
+h3 {
+  margin: 20px 0 10px;
+  color: #6a040f;
+}
+
+/* ---------- Home ---------- */
+#home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  background:rgb(216, 126, 47);
+}
+
+#home h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+#home p {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+/* ---------- Cards ---------- */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.emoji {
+  font-size: 3.5rem;
+}
+
+.card h4 {
+  margin: 8px 0;
+}
+
+.price {
+  color: #d62828;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+/* ---------- Order button ---------- */
+.order-btn {
+  background-color: #ffd60a;
+  color: #333;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.order-btn:hover {
+  background-color: #d62828;
+  color: white;
+}
+
+/* ---------- Offers ---------- */
+.offer {
+  background-color: #f77f00;
+  color: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* ---------- Reviews ---------- */
+.review {
+  background-color: white;
+  padding: 20px;
+  border-left: 5px solid #d62828;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.name {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* ---------- Contact + footer ---------- */
+#contact p {
+  margin-bottom: 8px;
+}
+
+footer {
+  background-color: #6a040f;
+  color: white;
+  text-align: center;
+  padding: 18px;
+}
+
+/* ---------- Mobile screens ---------- */
+@media (max-width: 700px) {
+  header {
+    flex-direction: column;
+    gap: 8px;
+  }
+  nav a {
+    margin: 0 8px;
+    font-size: 0.9rem;
+  }
+  #home h1 {
+    font-size: 2rem;
+  }
+  section {
+    padding-top: 110px;
+  }
+}
